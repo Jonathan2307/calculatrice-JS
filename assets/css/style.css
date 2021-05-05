@@ -1,0 +1,22 @@
+/* =======reset CSS======= */
+:root {
+    --black: #171717;
+    --blue: #268bdd;
+    --red: #c22626;
+    --grey: #909096;
+    --orange: #dda01b;
+    --white: #ffffff;
+
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+/* =======reset CSS======= */
+

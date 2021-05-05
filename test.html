@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="habibou" class="container text-center p-4">
+        <button type="button" class="btn btn-success" data-button="fruit" data-translate="apple">Pomme</button>
+        <button type="button" class="btn btn-danger" data-button="fruit" data-translate="strawberry">Fraise</button>
+        <button type="button" class="btn btn-warning" data-button="fruit" data-translate="banana">Banane</button>
+        <button id="rotten" type="button" class="btn btn-secondary" data-button="rotten"
+            data-translate="rotten fruit">Fruit moisi</button>
+        <div>
+            <p>Translate</p>
+            <input class="m-2" type="text" id="result" disabled>
+        </div>
+    </div>
+
+    <script>
+        // Je recupère le noeud avec les boutons contenant uniquement le "data-button=fruit"
+        const fruitButtons = habibou.querySelectorAll('button[data-button="fruit"]')
+
+        // j'utilise une boucle forEach pour ajouter un écouteur d'évévenement à chaque bouton
+        fruitButtons.forEach(element => {
+            element.addEventListener('click', function () {
+                // je récupère la valeur du data à l'aide de la syntaxe : dataset.NOM-DU-DATA
+                result.value = this.dataset.translate
+            })
+        });
+
+
+
+        // Petit test pour tester le this uniquement sur le bouton dont l'id = "rotten"
+        rotten.addEventListener('click', function () {
+            // version avec this
+            console.log('tu as cliqué sur : ' + this.innerHTML)
+            // version sans this en appelant l'élément avec un getElmentById
+            console.log('tu as cliqué sur : ' + document.getElementById('rotten').innerHTML)
+        })
+
+    </script>
+</body>
+</html>

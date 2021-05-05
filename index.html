@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./assets/js/script.js" defer></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Calculatrice</h1>
+    <table id="calculator" class="calc">
+        <tr>
+            <td colspan="4">
+                <label for="numberOne">Number 1</label>
+                <input type="text" id="numberOne" disabled>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <label for="">Operator</label>
+                <input type="text" id="operator" disabled>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <label for="">Number 2</label>
+                <input type="text" id="numberTwo"disabled>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <label for="">Result</label>
+                <input type="text" id="result" data-button="result" disabled>
+            </td>
+        </tr>
+        <tr>
+            <td><input type="button" value="CE" class="td-button" data-reset="CE" data-button=calcbutton></td>
+            <td><input type="button" value="%" class="td-button" data-operator="%" data-button="operatebutton"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="7" class="td-button" data-button="calcbutton" data-number="7"></td>
+            <td><input type="button" value="8" class="td-button" data-button="calcbutton" data-number="8"></td>
+            <td><input type="button" value="9" class="td-button" data-button="calcbutton" data-number="9"></td>
+            <td><input type="button" value="/" class="td-button" data-button="operatebutton" data-operator="/"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="4" class="td-button" data-button="calcbutton" data-number="4"></td>
+            <td><input type="button" value="5" class="td-button" data-button="calcbutton" data-number="5"></td>
+            <td><input type="button" value="6" class="td-button" data-button="calcbutton" data-number="6"></td>
+            <td><input type="button" value="x" class="td-button" data-button="operatebutton" data-operator="x"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="1" class="td-button" data-button="calcbutton" data-number="1"></td>
+            <td><input type="button" value="2" class="td-button" data-button="calcbutton" data-number="2"></td>
+            <td><input type="button" value="3" class="td-button" data-button="calcbutton" data-number="3"></td>
+            <td><input type="button" value="+" class="td-button" data-button="operatebutton" data-operator="+"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="0" class="td-button" data-button="calcbutton" data-number="0"></td>
+            <td><input type="button" value="," class="td-button" data-button="calcbutton" data-number=","></td>
+            <td><input type="button" value="=" class="td-button" data-button="resultbutton" data-result="="></td>
+            <td><input type="button" value="-" class="td-button" data-button="operatebutton" data-operator="-"></td>
+        </tr>
+    </table>
+</body>
+
+</html>
