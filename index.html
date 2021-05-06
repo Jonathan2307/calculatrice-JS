@@ -12,7 +12,7 @@
 
 <body>
     <h1>Calculatrice</h1>
-    <table id="calculator" class="calc">
+    <table class="calculator" class="calc">
         <tr>
             <td colspan="4">
                 <label for="numberOne">Number 1</label>
@@ -62,7 +62,7 @@
         <tr>
             <td><input type="button" value="0" class="td-button" data-button="calcbutton" data-number="0"></td>
             <td><input type="button" value="," class="td-button" data-button="calcbutton" data-number=","></td>
-            <td><input type="button" value="=" class="td-button" data-button="resultbutton" data-result="="></td>
+            <td><input id="resultButton" type="button" value="=" class="td-button" data-button="resultbutton" data-result="="></td>
             <td><input type="button" value="-" class="td-button" data-button="operatebutton" data-operator="-"></td>
         </tr>
     </table>
