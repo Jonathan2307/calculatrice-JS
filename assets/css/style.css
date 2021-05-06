@@ -1,7 +1,7 @@
 /* =======reset CSS======= */
 :root {
     --black: #171717;
-    --blue: #95c5ec;
+    --grey: #dbdee0;
     --orange: #dda01b;
     --white: #ffffff;
 }
@@ -13,9 +13,68 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
 }
+/* reset input */
+input {
+    border : none;
+    background: none;
+    font-size: 5vh;
+    text-align: center;        
+}
 
 /* =======reset CSS======= */
 
-.calculator {
-    background-color: blue;
+
+.screen {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--grey);
+    height: 50vh;
+
+}
+.field {
+    height: calc(100% / 4);
+    text-align: right;
+    font-size: 5rem;
+    
+}
+#operator {
+    text-align: left;
+}
+#result {
+    border-top : 1px solid var(--orange);
+    padding-top: 0.2em;
+}
+.div-button {
+    display: flex;
+    width: 9vh;
+    height: 9vh;
+    color: var(--black);
+    background-color: var(--white);
+    justify-content:space-evenly ;
+    border-radius: 10%;
+}
+.div-button:hover {
+    color: var(--white);
+    background-color: var(--grey);
+    transition: ease-in 0.1s;
+}
+
+.pad {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 50vh;
+    background: var(--black);
+}
+.row1, .row2, .row3, .row4, .row5 {
+    background-color: var(--black);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 0.8vh;
+    
+}
+.row1 {
+    justify-content:center;
+    
 }

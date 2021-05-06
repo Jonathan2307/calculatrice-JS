@@ -72,5 +72,5 @@ resultButton.addEventListener('click', function () {
             result.value = 'Entrez un operateur'
         }
         //on renvoie la valeur du calcul dans l'input result
-        result.value = testOperator;   
+        result.value = '=' + '  ' + testOperator;   
     })
