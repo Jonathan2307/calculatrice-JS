@@ -12,6 +12,7 @@
 </head>
 
 <body>
+    <div id="calculator">
     <div class="screen">
         <input class="field" type="text" id="numberOne" disabled>
         <input class="field" type="text" id="operator" disabled>
@@ -20,9 +21,9 @@
     </div>
     <div class="pad">
         <div class="row1">
-            <input type="button" value="CE" class="div-button" data-reset="CE" data-button=calcbutton >
+            <input id="reset" type="button" value="CE" class="div-button" data-reset="CE" data-button=calcbutton >
             <span>vide</span>
-            <input type="button" value="%" class="div-button" data-operator="%" data-button="operatebutton">
+            <input id="modulo" type="button" value="%" class="div-button" data-operator="%" data-button="operatebutton">
         </div>
         <div class="row2">
             <input type="button" value="7" class="div-button" data-button="calcbutton" data-number="7">
@@ -34,7 +35,7 @@
             <input type="button" value="4" class="div-button" data-button="calcbutton" data-number="4">
             <input type="button" value="5" class="div-button" data-button="calcbutton" data-number="5">
             <input type="button" value="6" class="div-button" data-button="calcbutton" data-number="6">
-            <input type="button" value="×" class="div-button" data-button="operatebutton" data-operator="x">
+            <input type="button" value="×" class="div-button" data-button="operatebutton" data-operator="×">
         </div>
         <div class="row4">
             <input type="button" value="1" class="div-button" data-button="calcbutton" data-number="1">
@@ -49,6 +50,7 @@
                 data-result="=">
             <input type="button" value="-" class="div-button" data-button="operatebutton" data-operator="-">
         </div>
+    </div>
     </div>
 </body>
 

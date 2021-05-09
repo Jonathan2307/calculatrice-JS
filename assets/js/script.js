@@ -49,23 +49,23 @@ resultButton.addEventListener('click', function () {
 
         switch (testOperator) {
         case '+' :
-            testOperator = +(numberOne.value) + +(numberTwo.value)
+            testOperator = parseFloat(numberOne.value) + parseFloat(numberTwo.value)
            break;
 
         case '-' :
-            testOperator = +(numberOne.value) - +(numberTwo.value)
+            testOperator = parseFloat(numberOne.value) - parseFloat(numberTwo.value)
             break;
         
-        case 'x' :
-            testOperator = +(numberOne.value) * +(numberTwo.value)
+        case '×' :
+            testOperator = parseFloat(numberOne.value) * parseFloat(numberTwo.value)
             break;
         
         case '/' :
-            testOperator = +(numberOne.value) / +(numberTwo.value)
+            testOperator = parseFloat(numberOne.value) / parseFloat(numberTwo.value)
             break;
             
         case '%' :
-            testOperator = +(numberOne.value) % +(numberTwo.value)
+            testOperator = parseFloat(numberOne.value) % parseFloat(numberTwo.value)
             break;
 
         default :
